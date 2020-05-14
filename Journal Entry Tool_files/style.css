@@ -1,0 +1,255 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:whitesmoke;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#ffcc00;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  border-top: #1D1C1C 40px solid;
+  background:white;
+  color:black;
+  padding-top:30px;
+  min-height:0px;
+  border-bottom:#ffcc00 40px solid;
+}
+
+header a{
+  color:black;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  background:url('genius banner.jpg');
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;
+  text-align:center;
+  color:white;
+  border-radius: 8px; 
+  
+}
+
+#showcase h1{
+  padding-top: 10%; 
+  font-size:55px;
+  margin-bottom:10px;
+  text-shadow: 2px 2px gray;
+  
+}
+
+#showcase p{
+  font-size:20px;
+  text-shadow: 2px 2px gray;
+}
+
+/* text box*/
+
+.text-area1{ 
+  margin-left: 20px;
+  padding:15px;
+}
+
+#text-area{ 
+  margin-left: 20px;
+  padding:15px;
+}
+
+#submit1 {
+  margin-left: 5%;
+  padding: 20px;
+  background-color: #ffcc00;
+  font-size : 16px;
+  
+}
+
+#submit2 {
+  padding: 20px;
+  background-color: coral;
+  font-size : 16px;
+}
+
+#reset {
+  padding: 20px;
+  font-size : 16px;
+}
+
+/* video*/
+#EmbedVideo {
+margin-left: 370px;
+align-content: center;
+}
+
+#promotion{
+  padding:15px;
+  color:coral;
+  background:#35424a;
+}
+
+
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Shop */
+ul#Shop li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:10px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#ffcc00;
+  text-align: center;
+	border-bottom:#1D1C1C 200px solid;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
